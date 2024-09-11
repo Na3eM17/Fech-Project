@@ -6,6 +6,11 @@
     align-items: center;
     height: 100vh;
     background-color: rgb(35, 18, 87);
+    flex-direction: column;
+text-align: center;
+}
+.containor h1{
+    font-size: 40px;
 }
 
 body{
@@ -13,7 +18,7 @@ body{
 }
 
 .info-contanor{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +130,7 @@ input:active{
 #torepo{
     width: 100%;
     text-align: center;
-}h1{font-size: 25px; color: white;}
+}h1{font-size: 23px; color: white;}
 
 .footer{
     border-bottom: 2px solid rgba(255, 255, 255, 0.24);
@@ -173,7 +178,14 @@ h5{
         width: 100%;
     }
 
-
+    #first #date{
+        width: 210px;
+        margin: 0;
+    }
+}
+#first #date{
+    width: 210px;
+    margin: 0;
 }
 
 @media screen and (max-width:666px){
@@ -181,6 +193,9 @@ h5{
 #first{
     flex-direction: column;
     align-items: center;
+}
+#first #date{
+    width: 200px;
 }
 .div-first{
     flex-direction: column;
