@@ -1,18 +1,20 @@
-const srch = document.getElementById("icon");
+const srch = document.getElementById("torepo2");
 let shw = document.getElementById("nam");
 
 function hid(){
-        srch.style.display = "none";
+        
 }
 
 
 async function fetchData(){
+    
     try{
         const name = document.getElementById("nam").value;
         const response = await fetch(`https://api.github.com/users/${name}`);
         if(!response.ok){
             throw new Error("cant find data");
         }
+        srch.style.display = "flex";
         const data = await response.json();
 
         console.log(data);
