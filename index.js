@@ -1,4 +1,5 @@
 const srch = document.getElementById("torepo2");
+const btn = document.getElementById("url-page");
 let shw = document.getElementById("nam");
 
 function hid(){
@@ -15,6 +16,7 @@ async function fetchData(){
             throw new Error("cant find data");
         }
         srch.style.display = "flex";
+        btn.style.display = "flex";
         const data = await response.json();
 
         console.log(data);
